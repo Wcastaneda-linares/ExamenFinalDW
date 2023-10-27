@@ -1,0 +1,18 @@
+version: "4.24.2"
+services:
+  examenfinal:  
+    build: ./server
+    ports:
+      - "3000:3000" 
+    env_file:
+      - ./server/.env
+    links:
+      - mongo 
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=wlinares
+      - MONGO_INITDB_ROOT_PASSWORD=12345678
+      - MONGO_URI=mongodb://wlinares:12345678@mongo:27017/users?authSource=admin

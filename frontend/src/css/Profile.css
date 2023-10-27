@@ -1,0 +1,38 @@
+/* src/css/Profile.css */
+
+/* Contenedor principal del perfil */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Título del perfil */
+  .profile-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Información del perfil */
+  .profile-info {
+    font-size: 18px;
+  }
+  
+  /* Enlace de regreso a la página de inicio */
+  .back-to-home {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007bff; /* Puedes personalizar el color */
+  }
+  
+  .back-to-home:hover {
+    text-decoration: underline;
+  }
+  
